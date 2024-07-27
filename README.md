@@ -2,14 +2,14 @@
 学习django记录
 # 设置一个文件夹为静态文件，然后可以给app引用里面的文件
 在**setting**中
-`# BASE_DIR 定义为项目的根目录（即 manage.py 所在的目录）
-BASE_DIR = Path(__file__).resolve().parent.parent
+# BASE_DIR 定义为项目的根目录（即 manage.py 所在的目录）
+`BASE_DIR = Path(__file__).resolve().parent.parent`
 # STATIC_URL 是静态文件的 URL 路径前缀。静态文件在浏览器中的访问路径
-STATIC_URL = '/static/'
+`STATIC_URL = '/static/'`
 # MEDIA_URL 是媒体文件的 URL 路径前缀。上传的文件在浏览器中的访问路径
-MEDIA_URL = '/media/'
+`MEDIA_URL = '/media/'`
 # MEDIA_ROOT 定义媒体文件在文件系统中的存储位置
-MEDIA_ROOT = BASE_DIR / 'media'`
+`MEDIA_ROOT = BASE_DIR / 'media'`
 
 在需要静态文件的**app的urls**中
 `# 如果 DEBUG 模式开启，添加静态和媒体文件的 URL 配置
