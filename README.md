@@ -18,3 +18,5 @@
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)`
 * 在app的**views.py**中
 `file_path = os.path.join(settings.MEDIA_ROOT, '模板文件.xlsx')`
+![logo](https://github.com/user-attachments/assets/863c4e85-99fa-4079-aa52-0d4de64d285b)
+
